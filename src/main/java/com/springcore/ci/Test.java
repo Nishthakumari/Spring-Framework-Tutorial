@@ -9,5 +9,7 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("ciconfig.xml");
         Person person = (Person) context.getBean("person");
         System.out.println(person);
+        Adition add=(Adition) context.getBean("add");
+        add.doSum();
     }
 }

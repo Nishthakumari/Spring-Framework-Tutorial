@@ -19,4 +19,8 @@
         <constructor-arg value="12" />
         <constructor-arg ref="cer" />
     </bean>
+    <bean class="com.springcore.ci.Adition" name="add" >
+        <constructor-arg value="12" type="int" index="1" />
+        <constructor-arg value="34" type="int" index="0"  />
+    </bean>
 </beans>
