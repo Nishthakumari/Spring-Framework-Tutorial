@@ -19,7 +19,4 @@
         <constructor-arg value="12" />
         <constructor-arg ref="cer" />
     </bean>
-
-
-
 </beans>
