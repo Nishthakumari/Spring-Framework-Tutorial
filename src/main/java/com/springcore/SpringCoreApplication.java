@@ -1,6 +1,7 @@
 package com.springcore;
 
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringCoreApplication {
@@ -10,7 +11,11 @@ public class SpringCoreApplication {
 
 		System.out.println("Hello World");
 
-		new ClassPathXmlApplicationContext()
+		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+
+		Student student1 = (Student) context.getBean("student1");
+
+		System.out.println(student1);
 	}
 
 }
