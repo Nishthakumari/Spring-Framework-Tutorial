@@ -14,8 +14,10 @@ public class SpringCoreApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
 		Student student1 = (Student) context.getBean("student1");
+		Student student2 = (Student) context.getBean("student2");
 
 		System.out.println(student1);
+		System.out.println(student2);
 	}
 
 }
