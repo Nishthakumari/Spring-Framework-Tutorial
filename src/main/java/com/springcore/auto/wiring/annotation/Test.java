@@ -1,4 +1,4 @@
-package com.springcore.auto.wiring;
+package com.springcore.auto.wiring.annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
