@@ -11,10 +11,15 @@
 
         <context:annotation-config/>
 
-        <bean class="com.springcore.auto.wiring.annotation.Address" name="address1">
+        <bean class="com.springcore.auto.wiring.annotation.Address" name="temp">
             <property name="street" value="Green Street"/>
             <property name="city" value="Delhi"/>
         </bean>
+
+    <bean class="com.springcore.auto.wiring.annotation.Address" name="temp2">
+        <property name="street" value="Yellow Street"/>
+        <property name="city" value="Lucknow"/>
+    </bean>
 
 
     <bean class="com.springcore.auto.wiring.annotation.Emp"  name="emp1"/>
