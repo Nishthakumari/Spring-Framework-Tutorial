@@ -10,10 +10,15 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-        <bean class="com.springcore.auto.wiring.Address" name="address">
+        <bean class="com.springcore.auto.wiring.Address" name="address1">
             <property name="street" value="Green Street"/>
             <property name="city" value="Delhi"/>
         </bean>
 
-    <bean class="com.springcore.auto.wiring.Emp" autowire="byName"  name="emp1"/>
+<!--    <bean class="com.springcore.auto.wiring.Address" name="address">-->
+<!--        <property name="street" value="Yellow Street"/>-->
+<!--        <property name="city" value="Lucknow"/>-->
+<!--    </bean>-->
+
+    <bean class="com.springcore.auto.wiring.Emp" autowire="byType"  name="emp1"/>
 </beans>
